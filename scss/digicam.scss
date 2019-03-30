@@ -1,0 +1,133 @@
+$font-white: #ffffff;
+$font-black: #000000;
+$background: #1f1f1f;
+
+*{
+    color: $font-white;
+    transition: .5s all ease-in-out;
+    font-size: 16px;
+}
+input,button{
+    padding: 0;
+    border: 0;
+    color: $background;
+    background:  font-white;
+    &:focus{
+        outline: none;
+    }
+}
+
+a{
+    color: skyblue;
+    cursor: pointer;
+    &:hover{
+        color: skyblue;
+    }
+}
+body{
+    background: $background;
+}
+
+footer{
+    display: none;
+}
+
+#login {
+    h2{
+        color: #888;
+    }
+    input{
+        color: $font-black;
+    }
+    .loginLink {
+        color: $font-white;
+        background: $background;    
+        a {
+            color: $font-white;
+        }
+    }
+
+    .loginArea{
+         background: $background;
+         border: 3px solid #555;
+         border-radius: 10px;
+         overflow: hidden;
+    }
+
+    #header{
+        color: $font-white;
+        background: $background;
+    }
+
+    .loginBtn {
+        border: 0;
+        cursor: pointer;
+    }
+
+}
+// header
+
+#commonHeader,aside,.threeQuestionsArea{
+    background: $background;
+}
+
+// a tag
+
+.menuList >li >i a,
+.menuList >li a,
+.navCategoryList a,
+.homeNewsBox .showList{
+    color: $font-white;   
+    font-size: 16px;
+}
+
+.currentNew span{
+    color: #000 !important;
+}
+
+#gnav {
+    .current, a:hover{
+        color: #000;
+    }
+}
+
+.tabelType01, .tabelType02 {
+    th,td{
+        background: $background;
+    }
+}
+
+tr:not([onclick]):hover a{
+    color: skyblue; 
+}
+tr[onclick]:hover td{
+    color: $font-black;
+}
+// header
+
+#commonHeader,aside,.threeQuestionsArea{
+    background: $background;
+}
+
+// a tag
+
+.menuList >li >i a,
+.menuList >li a,
+.navCategoryList a,
+.homeNewsBox .showList{
+    color: $font-white;   
+    font-size: 16px;
+}
+
+.currentNew span{
+    color: #000 !important;
+}
+
+#gnav {
+    .current, a:hover{
+        color: #000;
+        border-radius: 10px;
+    }
+}
+
+
