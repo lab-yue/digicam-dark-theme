@@ -2,195 +2,199 @@ $font-white: #ffffff;
 $font-black: #000000;
 $border-grey: #555555;
 $background: #1f1f1f;
-$background-grey: rgba(100,100,100,.6);
+$background-grey: rgba(100, 100, 100, 0.6);
 
-*{
+@-moz-document domain('dh.force.com') {
+  * {
     color: $font-white;
-    transition: .3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     font-size: 16px;
-}
+  }
 
-input,button{
+  input,
+  button {
     padding: 0;
     border: 0;
     color: $background;
-    background:  font-white;
-    &:focus{
-        outline: none;
+    background: font-white;
+    &:focus {
+      outline: none;
     }
-}
+  }
 
-textarea{
+  textarea {
     background: $background-grey;
-}
-a{
+  }
+  a {
     color: skyblue;
     cursor: pointer;
-    &:hover{
-        color: skyblue;
+    &:hover {
+      color: skyblue;
     }
-}
-body{
+  }
+  body {
     background: $background;
-}
+  }
 
-footer{
+  footer {
     display: none;
-}
+  }
 
-td {
+  td {
     word-break: break-word;
-}
+  }
 
-#login {
-    h2{
-        color: #888;
+  #login {
+    h2 {
+      color: #888;
     }
-    input{
-        color: $font-black;
+    input {
+      color: $font-black;
     }
     .loginLink {
+      color: $font-white;
+      background: $background;
+      a {
         color: $font-white;
-        background: $background;    
-        a {
-            color: $font-white;
-        }
+      }
     }
 
-    .loginArea{
-         background: $background;
-         border: 3px solid $border-grey;
-         border-radius: 10px;
-         overflow: hidden;
+    .loginArea {
+      background: $background;
+      border: 3px solid $border-grey;
+      border-radius: 10px;
+      overflow: hidden;
     }
 
-    #header{
-        color: $font-white;
-        background: $background;
+    #header {
+      color: $font-white;
+      background: $background;
     }
 
     .loginBtn {
-        border: 0;
-        cursor: pointer;
+      border: 0;
+      cursor: pointer;
     }
+  }
 
-}
-// header
-
-#commonHeader,aside,.threeQuestionsArea{
+  #commonHeader,
+  aside,
+  .threeQuestionsArea {
     background: $background-grey;
-}
-.currentNew span{
-    color: #000 !important;
-}
+  }
+  .currentNew span {
+    color: $font-black !important;
+  }
 
-#gnav {
-    .current, a:hover{
-        color: #000;
+  #gnav {
+    .current,
+    a:hover {
+      color: $font-black;
     }
-}
+  }
 
-.tabelType01, .tabelType02 {
-    th{
-        background: $border-grey;
-        border: 2px #555 solid;
+  .tabelType01,
+  .tabelType02 {
+    th {
+      background: $border-grey;
+      border: 2px #555 solid;
     }
-    td:not(.toAll){
-        background: $background;
-        border: 2px #555 solid;
+    td:not(.toAll) {
+      background: $background;
+      border: 2px #555 solid;
     }
-}
+  }
 
-tr:not([onclick]):hover a{
-    color: skyblue; 
+  tr:not([onclick]):hover a {
+    color: skyblue;
     background: $background-grey;
-}
-tr[onclick]:hover td{
+  }
+  tr[onclick]:hover td {
     color: $font-white;
     background: $background-grey;
-}
-// header
+  }
 
-#commonHeader,.threeQuestionsArea{
+  #commonHeader,
+  .threeQuestionsArea {
     background: $background;
-}
-.menuList, .menuBlock{
+  }
+  .menuList,
+  .menuBlock {
     border-bottom: 3px solid $border-grey;
-}
-.menuList >li >i a,
-.menuList >li a,
-.navCategoryList a{
-    color: $font-white;   
+  }
+  .menuList > li > i a,
+  .menuList > li a,
+  .navCategoryList a {
+    color: $font-white;
     font-size: 16px;
-}
+  }
 
-.currentNew span{
-    color: #000 !important;
-}
+  .currentNew span {
+    color: $font-black !important;
+  }
 
-#gnav {
-    a{
-        &:not(.current):hover{
-            color: $font-white;
-            background: $background-grey;
-        }
-
+  #gnav {
+    a {
+      &:not(.current):hover {
+        color: $font-white;
+        background: $background-grey;
+      }
     }
 
-    .current, a{
-        border-radius: 5px;
-        &:hover{
-            color: $font-black;
-            transform: translateX(5px);
-        }
+    .current,
+    a {
+      border-radius: 5px;
+      &:hover {
+        color: $font-black;
+        transform: translateX(5px);
+      }
     }
-
-}
-.wrapper{
+  }
+  .wrapper {
     overflow: visible;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-}
-aside{
+  }
+  aside {
     width: auto;
     background: $background;
     padding: 10px;
-    box-shadow: 0 0 10px #000;
-}
+    box-shadow: 0 0 10px $font-black;
+  }
 
-#mainContents{
+  #mainContents {
     width: auto;
     padding: 0 10px;
     margin: 0 10px;
-}
+  }
 
-.question1to3{
+  .question1to3 {
     padding: 5px 10px;
     font-size: 18px;
     background: $background-grey;
     border-radius: 5px;
-}
+  }
 
-.homeNewsBox{
-    padding-top: 0; 
+  .homeNewsBox {
+    padding-top: 0;
     .cateTtl {
-        background-image: linear-gradient(to right,#ff0000,orange);
-        padding: 10px;
-        font-size: 18px;
-        border-radius: 10px;
-        width: -webkit-fill-available;  
-        width: -moz-available;
-        margin-bottom: 15px;
+      background-image: linear-gradient(to right, #ff0000, orange);
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 10px;
+      width: -webkit-fill-available;
+      width: -moz-available;
+      margin-bottom: 15px;
     }
-    tr a.showList{
-        color: $font-white;   
-        font-size: 16px;
-        border-radius: 5px;
-        &:hover{
-            color: $font-white;   
-            background: $background-grey;
-        }
-        
+    tr a.showList {
+      color: $font-white;
+      font-size: 16px;
+      border-radius: 5px;
+      &:hover {
+        color: $font-white;
+        background: $background-grey;
+      }
     }
+  }
 }
