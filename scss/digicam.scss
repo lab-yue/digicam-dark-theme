@@ -20,6 +20,9 @@ input,button{
     }
 }
 
+textarea{
+    background: $background-grey;
+}
 a{
     color: skyblue;
     cursor: pointer;
@@ -160,6 +163,13 @@ aside{
     width: auto;
     padding: 0 10px;
     margin: 0 10px;
+}
+
+.question1to3{
+    padding: 5px 10px;
+    font-size: 18px;
+    background: $background-grey;
+    border-radius: 5px;
 }
 
 .homeNewsBox{
