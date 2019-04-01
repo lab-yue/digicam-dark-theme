@@ -16,10 +16,18 @@ $background-grey: rgba(100, 100, 100, 0.6);
     padding: 0;
     border: 0;
     color: $background;
-    background: font-white;
+    background: $font-white;
     &:focus {
       outline: none;
     }
+  }
+
+  input[checked] + label {
+    background-color: yellow;
+    color: #000;
+    padding-right: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
   }
 
   textarea {
