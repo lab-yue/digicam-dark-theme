@@ -30,8 +30,13 @@ $background-grey: rgba(100, 100, 100, 0.6);
     border-radius: 5px;
   }
 
-  textarea {
-    background: $background-grey;
+  textarea.questionInput {
+    background: unset;
+    border: 2px solid $background-grey;
+    min-height: 300px;
+    &:focus {
+      border: 2px solid yellow;
+    }
   }
   a {
     color: skyblue;
@@ -50,6 +55,17 @@ $background-grey: rgba(100, 100, 100, 0.6);
 
   td {
     word-break: break-word;
+  }
+  .btnBack,
+  .btnNext {
+    cursor: pointer;
+  }
+  .btnNext {
+    font-weight: bold;
+    background-color: orange;
+    &:hover {
+      background-color: orangered;
+    }
   }
 
   #login {
