@@ -23,7 +23,7 @@ $background-grey: rgba(100, 100, 100, 0.6);
   }
 
   input[checked] + label {
-    background-color: yellow;
+    background-color: skyblue;
     color: #000;
     padding-right: 10px;
     margin-left: 5px;
@@ -35,7 +35,7 @@ $background-grey: rgba(100, 100, 100, 0.6);
     border: 2px solid $background-grey;
     min-height: 300px;
     &:focus {
-      border: 2px solid yellow;
+      border: 2px solid skyblue;
     }
   }
   a {
@@ -62,9 +62,9 @@ $background-grey: rgba(100, 100, 100, 0.6);
   }
   .btnNext {
     font-weight: bold;
-    background-color: orange;
+    background-color: lightseagreen;
     &:hover {
-      background-color: orangered;
+      background-color: #03a9f4;
     }
   }
 
@@ -164,6 +164,12 @@ $background-grey: rgba(100, 100, 100, 0.6);
         background: $background-grey;
       }
     }
+    .current {
+      background-color: lightseagreen;
+      &:hover {
+        background-color: #03a9f4;
+      }
+    }
 
     .current,
     a {
@@ -202,10 +208,12 @@ $background-grey: rgba(100, 100, 100, 0.6);
 
   .homeNewsBox {
     padding-top: 0;
+    margin-bottom: 70px;
     .cateTtl {
-      background-image: linear-gradient(to right, #ff0000, orange);
+      background-image: linear-gradient(to right, #03a9f4, #cddc39);
+      text-shadow: 0 0 10px #666;
       padding: 10px;
-      font-size: 18px;
+      font-size: 22px;
       border-radius: 10px;
       width: -webkit-fill-available;
       width: -moz-available;
