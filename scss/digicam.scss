@@ -1,7 +1,7 @@
 $font-white: #ffffff;
 $font-black: #000000;
 $border-grey: #555555;
-$background: #1f1f1f;
+$background: #252525;
 $background-grey: rgba(100, 100, 100, 0.6);
 
 @-moz-document domain('dh.force.com') {
@@ -110,13 +110,6 @@ $background-grey: rgba(100, 100, 100, 0.6);
     color: $font-black !important;
   }
 
-  #gnav {
-    .current,
-    a:hover {
-      color: $font-black;
-    }
-  }
-
   .tabelType01,
   .tabelType02 {
     th {
@@ -165,6 +158,9 @@ $background-grey: rgba(100, 100, 100, 0.6);
       }
     }
     .current {
+      color: #fff;
+      text-shadow: 0 0 5px #555;
+      font-weight: bold;
       background-color: lightseagreen;
       &:hover {
         background-color: #03a9f4;
@@ -175,7 +171,6 @@ $background-grey: rgba(100, 100, 100, 0.6);
     a {
       border-radius: 5px;
       &:hover {
-        color: $font-black;
         transform: translateX(5px);
       }
     }
@@ -190,7 +185,7 @@ $background-grey: rgba(100, 100, 100, 0.6);
     width: auto;
     background: $background;
     padding: 10px;
-    box-shadow: 0 0 10px $font-black;
+    box-shadow: 0 0 10px #111;
   }
 
   #mainContents {
@@ -230,3 +225,5 @@ $background-grey: rgba(100, 100, 100, 0.6);
     }
   }
 }
+
+@import "./fs.scss";
