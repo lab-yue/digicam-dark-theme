@@ -23,7 +23,8 @@ $background-grey: rgba(100, 100, 100, 0.6);
   }
 
   input[checked] + label {
-    background-color: skyblue;
+    font-weight: bold;
+    background-color: #607d8b;
     color: #000;
     padding-right: 10px;
     margin-left: 5px;
@@ -35,14 +36,14 @@ $background-grey: rgba(100, 100, 100, 0.6);
     border: 2px solid $background-grey;
     min-height: 300px;
     &:focus {
-      border: 2px solid skyblue;
+      border: 2px solid #607d8b;
     }
   }
   a {
-    color: skyblue;
+    color: #607d8b;
     cursor: pointer;
     &:hover {
-      color: skyblue;
+      color: #607d8b;
     }
   }
   body {
@@ -62,9 +63,9 @@ $background-grey: rgba(100, 100, 100, 0.6);
   }
   .btnNext {
     font-weight: bold;
-    background-color: lightseagreen;
+    background-color: #888;
     &:hover {
-      background-color: #03a9f4;
+      background-color: #607d8b;
     }
   }
 
@@ -123,7 +124,7 @@ $background-grey: rgba(100, 100, 100, 0.6);
   }
 
   tr:not([onclick]):hover a {
-    color: skyblue;
+    color: #607d8b;
     background: $background-grey;
   }
   tr[onclick]:hover td {
@@ -138,6 +139,10 @@ $background-grey: rgba(100, 100, 100, 0.6);
   .menuList,
   .menuBlock {
     border-bottom: 3px solid $border-grey;
+    padding-top: 0;
+  }
+  .menuBlock ~ .menuBlock {
+    padding-top: 15px;
   }
   .menuList > li > i a,
   .menuList > li a,
@@ -145,13 +150,29 @@ $background-grey: rgba(100, 100, 100, 0.6);
     color: $font-white;
     font-size: 16px;
   }
+  .menuList > li p {
+    display: none;
+  }
+  .menuList > li a::before {
+    background: linear-gradient(45deg, transparent, #9e9e9e);
+    width: 8px;
+    border: 0;
+    height: 8px;
+    margin-right: 15px;
+    box-shadow: 0 0 5px #252525;
+  }
 
   .currentNew span {
     color: $font-black !important;
   }
 
   #gnav {
+    border-radius: 10px;
+    background: #2f2f2f;
     a {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: pre;
       &:not(.current):hover {
         color: $font-white;
         background: $background-grey;
@@ -161,9 +182,9 @@ $background-grey: rgba(100, 100, 100, 0.6);
       color: #fff;
       text-shadow: 0 0 5px #555;
       font-weight: bold;
-      background-color: lightseagreen;
+      background-color: #607d8b;
       &:hover {
-        background-color: #03a9f4;
+        background-color: #607d8b;
       }
     }
 
@@ -179,7 +200,13 @@ $background-grey: rgba(100, 100, 100, 0.6);
     overflow: visible;
     margin-top: 30px;
     display: flex;
+    padding: 0 10px;
+    box-sizing: border-box;
     justify-content: space-between;
+  }
+
+  .navCategoryList {
+    text-indent: 0;
   }
   aside {
     width: auto;
@@ -204,8 +231,14 @@ $background-grey: rgba(100, 100, 100, 0.6);
   .homeNewsBox {
     padding-top: 0;
     margin-bottom: 70px;
+
+    & > input {
+      background: #555;
+      color: #e0e0e0 !important;
+    }
+
     .cateTtl {
-      background-image: linear-gradient(to right, #03a9f4, #cddc39);
+      background-image: linear-gradient(to right, #607d8b, #9e9e9e);
       text-shadow: 0 0 10px #666;
       padding: 10px;
       font-size: 22px;
@@ -225,5 +258,3 @@ $background-grey: rgba(100, 100, 100, 0.6);
     }
   }
 }
-
-@import "./fs.scss";
